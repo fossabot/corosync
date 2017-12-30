@@ -75,8 +75,18 @@
 #define MAX_MESSAGES				17
 #define MISS_COUNT_CONST			5
 
+/*
+ * we should make:
+ *  KNET_PING_INTERVAL = token_timeout / (KNET_PONG_COUNT * 2)
+ *  KNET_PING_TIMEOUT  = token_timeout / KNET_PONG_COUNT
+ *
+ *  or something along those lines, to have the ability for knet to
+ *  failover to another link even before corosync can notice
+ *  that a link has gone away
+ *
+ */
+#define KNET_PING_INTERVAL                      500
 /* These currently match the defaults in libknet.h */
-#define KNET_PING_INTERVAL                      1000
 #define KNET_PING_TIMEOUT                       2000
 #define KNET_PING_PRECISION                     2048
 #define KNET_PONG_COUNT                         2
