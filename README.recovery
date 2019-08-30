@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgpaulavicius%2Fcorosync.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgpaulavicius%2Fcorosync?ref=badge_shield)
+
 SYNCHRONIZATION ALGORITHM:
 -------------------------
 The synchronization algorithm is used for every service in corosync to
@@ -114,3 +116,7 @@ copy my_saved_ring_id to my_old_ring_id
 
 pseudocode called when the synchronization service calls the abort event:
 	free all temporary checkpoints and temporary sections
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgpaulavicius%2Fcorosync.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgpaulavicius%2Fcorosync?ref=badge_large)
